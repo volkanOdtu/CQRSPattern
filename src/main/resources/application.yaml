@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/productdb
+    username: postgres
+    password: 1165
+  jpa:
+    properties:
+      hibernate :
+        dialect : org.hibernate.dialect.MySQLDialect
+        temp:
+          use_jdbc_metadata_defaults : false
+app:
+  write:
+    enabled: true
